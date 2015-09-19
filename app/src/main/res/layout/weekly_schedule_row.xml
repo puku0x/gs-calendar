@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/tv_schedule_date"
+        android:textSize="18sp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yyyy年 Ｍ月d日 (E曜日)" />
+
+    <LinearLayout
+        android:id="@+id/ll_daily_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tv_schedule_date">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_schedule_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_schedule_date"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"/>
+
+</RelativeLayout >

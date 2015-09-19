@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pukulab.puku0x.gscalendar.EditActivity">
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <!--予定追加ボタン-->
+    <item android:id="@+id/menu_save"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/menu_save_schedule"
+        app:showAsAction="ifRoom|withText" />
+</menu>

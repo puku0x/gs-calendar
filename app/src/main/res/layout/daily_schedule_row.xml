@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="vertical"
+    android:minHeight="40dp"
+    android:padding="4dp"
+    android:background="@android:color/background_light">
+
+       <TextView
+           android:text="00:00"
+           android:id="@+id/tv_schedule_time_start"
+           android:textSize="14sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:text="00:00"
+           android:id="@+id/tv_schedule_time_end"
+           android:textSize="14sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_schedule_time_start"
+           android:textColor="@android:color/darker_gray" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_schedule_time_start"
+        android:layout_toEndOf="@+id/tv_schedule_time_start"
+        android:background="#3498db"
+        android:minWidth="2dp"
+        android:layout_marginLeft="4dp"
+        android:minHeight="40dp" />
+
+    <TextView
+        android:id="@+id/tv_schedule_title"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:text="スケジュールタイトル"
+        android:gravity="center_vertical"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/tv_schedule_same_users"
+        android:textSize="10sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/tv_schedule_title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:text="@string/unset"
+        android:gravity="center_vertical" />
+
+</RelativeLayout >

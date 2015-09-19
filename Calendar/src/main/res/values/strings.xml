@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Names for the header, monday - sunday-->
+    <!--<string name="lib_header_monday">MON</string>-->
+    <!--<string name="lib_header_tuesday">TUE</string>-->
+    <!--<string name="lib_header_wednesday">WED</string>-->
+    <!--<string name="lib_header_thursday">THU</string>-->
+    <!--<string name="lib_header_friday">FRI</string>-->
+    <!--<string name="lib_header_saturday">SAT</string>-->
+    <!--<string name="lib_header_sunday">SUN</string>-->
+    <string name="lib_header_monday">月</string>
+    <string name="lib_header_tuesday">火</string>
+    <string name="lib_header_wednesday">水</string>
+    <string name="lib_header_thursday">木</string>
+    <string name="lib_header_friday">金</string>
+    <string name="lib_header_saturday">土</string>
+    <string name="lib_header_sunday">日</string>
+
+    <!-- Names for the ViewPager indicator header, January - December-->
+    <string name="lib_month_january">1月</string>
+    <string name="lib_month_february">2月</string>
+    <string name="lib_month_march">3月</string>
+    <string name="lib_month_april">4月</string>
+    <string name="lib_month_may">5月</string>
+    <string name="lib_month_june">6月</string>
+    <string name="lib_month_july">7月</string>
+    <string name="lib_month_august">8月</string>
+    <string name="lib_month_september">9月</string>
+    <string name="lib_month_october">10月</string>
+    <string name="lib_month_november">11月</string>
+    <string name="lib_month_december">12月</string>
+</resources>
+
+<!--<resources>-->
+    <!--&lt;!&ndash; Names for the header, monday - sunday&ndash;&gt;-->
+    <!--<string name="lib_header_monday">MON</string>-->
+    <!--<string name="lib_header_tuesday">TUE</string>-->
+    <!--<string name="lib_header_wednesday">WED</string>-->
+    <!--<string name="lib_header_thursday">THU</string>-->
+    <!--<string name="lib_header_friday">FRI</string>-->
+    <!--<string name="lib_header_saturday">SAT</string>-->
+    <!--<string name="lib_header_sunday">SUN</string>-->
+
+    <!--&lt;!&ndash; Names for the ViewPager indicator header, January - December&ndash;&gt;-->
+    <!--<string name="lib_month_january">JANUARY</string>-->
+    <!--<string name="lib_month_february">FEBRUARY</string>-->
+    <!--<string name="lib_month_march">MARCH</string>-->
+    <!--<string name="lib_month_april">APRIL</string>-->
+    <!--<string name="lib_month_may">MAY</string>-->
+    <!--<string name="lib_month_june">JUNE</string>-->
+    <!--<string name="lib_month_july">JULY</string>-->
+    <!--<string name="lib_month_august">AUGUST</string>-->
+    <!--<string name="lib_month_september">SEPTEMBER</string>-->
+    <!--<string name="lib_month_october">OCTOBER</string>-->
+    <!--<string name="lib_month_november">NOVEMBER</string>-->
+    <!--<string name="lib_month_december">DECEMBER</string>-->
+<!--</resources>-->

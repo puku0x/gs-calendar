@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_delete_schedule"
+        android:overScrollMode="never">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.pukulab.puku0x.gscalendar.EditActivity"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:text="タイトル"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:inputType="text"
+                android:hint="@string/unset"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:text="予定区分"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id = "@+id/rl_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp">
+                <ImageView
+                    android:id="@+id/iv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#3498db"
+                    android:minWidth="18dp"
+                    android:minHeight="18dp"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/iv_category"
+                    android:hint="@string/unset"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:text="開始日時"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp" />
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <Button android:id="@+id/btn_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy:MM:dd"
+                    android:layout_marginLeft="10dp"/>
+                <Button android:id="@+id/btn_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HH:mm"
+                    android:layout_toRightOf="@id/btn_start_date"/>
+            </RelativeLayout>
+
+            <TextView
+                android:text="終了日時"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp" />
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="12dp">
+                <Button android:id="@+id/btn_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy:MM:dd" />
+                <Button android:id="@+id/btn_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HH:mm"
+                    android:layout_toRightOf="@id/btn_end_date"/>
+            </RelativeLayout>
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="12dp">
+                <CheckBox android:id="@+id/checkbox_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="終日" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:text="同じ予定が登録されたユーザ"
+            android:textSize="10sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_edit_same_schedule_users"
+            android:textSize="18sp"
+            android:textIsSelectable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:hint="@string/unset"
+            android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:text="予約済みの施設"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_edit_reserved_facilities"
+                android:textSize="18sp"
+                android:textIsSelectable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/unset"
+                android:paddingTop="10dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:text="内容"
+            android:textSize="10sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/unset"
+            android:inputType="text|textMultiLine" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/btn_delete_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:minHeight="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/menu_delete_schedule"
+            android:gravity="center"
+            android:layout_margin="9dp"
+            android:textColor="#e74c3c" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+</RelativeLayout>

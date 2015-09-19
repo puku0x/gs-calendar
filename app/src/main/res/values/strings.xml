@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">GSカレンダー</string>
+
+    <string name="action_settings">設定</string>
+    <string name="action_refresh">最新の情報に更新</string>
+    <string name="action_users">ユーザ 一覧</string>
+
+    <!--日付フォーマット-->
+    <string name="date_month_day_week">MM月dd日 (E)</string>
+    <string name="date_year_month_day">yyyy年 MM月dd日</string>
+    <string name="date_year_month_day_week">yyyy年 MM月dd日 (E)</string>
+    <string name="date_hour_minute">kk:mm</string>
+
+    <!--アクションバーのボタンとか-->
+    <string name="menu_refresh">更新</string>
+    <string name="menu_add_schedule">予定を追加</string>
+    <string name="menu_edit_schedule">予定を編集</string>
+    <string name="menu_save_schedule">予定を保存</string>
+    <string name="menu_delete_schedule">予定を削除</string>
+    <string name="menu_schedule_calendar">カレンダーに切替</string>
+    <string name="menu_schedule_list">リスト表示に切替</string>
+    <string name="menu_schedule_today">今日に戻る</string>
+
+    <!--編集ダイアログ-->
+    <string name="dialog_title_input_title">タイトルを入力</string>
+    <string name="dialog_title_select_category">予定区分を選択</string>
+    <string name="dialog_title_select_date">日付を選択</string>
+    <string name="dialog_title_select_time">時間を選択</string>
+    <string name="dialog_title_select_user">ユーザを選択</string>
+    <string name="dialog_title_select_facility">施設を選択</string>
+    <string name="dialog_title_input_detail">内容を入力</string>
+    <string name="ok">OK</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="cancel">キャンセル</string>
+    <string name="no_schedule">(予定なし)</string>
+    <string name="unset">(未設定)</string>
+    <string name="ask_delete">削除しますか？</string>
+    <string name="ask_update">予定が編集されています。上書き保存しますか？</string>
+    <string name="ask_exit">終了しますか？</string>
+    <string name="back_to_exit">"終了する場合は、もう一度バックボタンを押してください"</string>
+    <string name="refresh">"最新の情報に更新しています"</string>
+
+    <!--エラーメッセージ-->
+    <string name="login_error">ログインエラー: ID・パスワード・URLを確認してください</string>
+    <string name="connection_error">接続エラー: ネットワークの設定を確認してください</string>
+    <string name="edit_error_interval_five_minutes">入力エラー: 時間は5分間隔で設定してください</string>
+    <string name="edit_error_no_title">入力エラー: 予定のタイトルを入力してください</string>
+    <string name="edit_error_start_after_end">入力エラー: 終了日時より前の値を入力してください</string>
+    <string name="edit_error_end_before_start">入力エラー: 開始日時より前の値を入力してください</string>
+    <string name="edit_error_same_start_end">入力エラー: 開始日時と終了日時が同じです</string>
+
+    <string name="title_activity_calendar">カレンダー</string>
+    <string name="title_activity_schedule">予定</string>
+    <string name="title_activity_detail">詳細</string>
+    <string name="title_activity_edit">編集</string>
+    <string name="title_activity_add">追加</string>
+    <string name="title_activity_member_list">ユーザ一覧</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_detail"
+    tools:context="com.pukulab.puku0x.gscalendar.DetailActivity">
+
+    <!--<item android:id="@+id/action_settings" android:title="@string/action_settings"-->
+        <!--android:orderInCategory="100" app:showAsAction="never" />-->
+
+    <!--予定追加ボタン-->
+    <item android:id="@+id/menu_save"
+        android:icon="@drawable/ic_action_save"
+        android:title="@string/menu_save_schedule"
+        app:showAsAction="ifRoom|withText" />
+
+    <!--予定編集ボタン-->
+    <item android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/menu_edit_schedule"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

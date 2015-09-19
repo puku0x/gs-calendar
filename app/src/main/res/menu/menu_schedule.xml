@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pukulab.puku0x.gscalendar.ScheduleActivity">
+
+
+    <!--更新ボタン-->
+    <item android:id="@+id/action_refresh" android:title="@string/action_refresh"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <!--今日に戻る-->
+    <item android:id="@+id/action_today" android:title="@string/menu_schedule_today"
+        android:orderInCategory="200" app:showAsAction="never" />
+
+    <!--ユーザ切り替え-->
+    <item android:id="@+id/action_users" android:title="@string/action_users"
+        android:orderInCategory="300" app:showAsAction="never" />
+
+    <!--表示変更ボタン-->
+    <item android:id="@+id/action_calendar" android:title="@string/menu_schedule_calendar"
+        android:orderInCategory="400" app:showAsAction="never" />
+
+    <!--設定ボタン-->
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="500" app:showAsAction="never" />
+
+    <!--予定追加ボタン-->
+    <item android:id="@+id/menu_add"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/menu_add_schedule"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

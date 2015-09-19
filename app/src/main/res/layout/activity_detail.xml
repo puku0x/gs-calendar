@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_above="@+id/btn_delete_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.pukulab.puku0x.gscalendar.DetailActivity"
+            android:orientation="vertical" >
+
+            <!--タイトル-->
+            <TextView
+                android:text="タイトル"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/unset"
+                android:editable="false" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="8dp"/>
+
+            <!--予定区分-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="予定区分"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="8dp" />
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id = "@+id/rl_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="16dp" >
+                    <ImageView
+                        android:id="@+id/iv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="#3498db"
+                        android:minHeight="20dp"
+                        android:minWidth="20dp" />
+                    <TextView
+                        android:id="@+id/tv_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_category"
+                        android:layout_marginLeft="4dp"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:hint="@string/unset" />
+                </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="8dp"/>
+
+            <!--開始日時-->
+            <TextView
+                android:text="開始日時"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="14dp" >
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:hint="yyyy/MM/dd"/>
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_start_date"
+                    android:textSize="20sp"
+                    android:hint="HH:mm"/>
+            </RelativeLayout>
+
+            <!--終了日時-->
+            <TextView
+                android:text="終了日時"
+                android:textSize="10sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+            <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="14dp" >
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:hint="yyyy/MM/dd" />
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_end_date"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:hint="HH:mm" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:text="同じ予定が登録されたユーザ"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tv_detail_same_schedule_users"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/unset" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:text="予約済みの施設"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tv_detail_reserved_facilities"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/unset" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ddd"
+                android:minHeight="1px"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:text="内容"
+                android:textSize="10dp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tv_detail_detail"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:hint="@string/unset" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--プログレスバー-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_detail"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
